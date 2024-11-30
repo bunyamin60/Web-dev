@@ -3,9 +3,11 @@
     public class Hizmetler
     {
 
-        public int HizmetId { get; set; }
+        public int HizmetlerId { get; set; }
         public string HizmetName { get; set; }
         public int HizmetSuresi { get; set; }
-        public decimal HizmetFiyat { get; set; }
+        public int HizmetFiyat { get; set; }
+
+        public ICollection<Randevu> Randevular { get; set; }
     }
 }
