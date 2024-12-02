@@ -14,7 +14,14 @@ namespace WebÖdev.Models
         public int  HizmetId { get; set; }
 
         public DateTime RandevuZamani { get; set; }
-        public string RandevuDurumu {  get; set; }
+        public enum RandevuDurum
+        {
+            Bekliyor,
+            Onaylandi,
+            IptalEdildi
+        }
+        public RandevuDurum RandevuDurumu { get; set; }
+
 
         // Navigation Properties
         [ForeignKey("CalisanId")]

@@ -9,8 +9,10 @@ namespace WebÖdev.Models
 
         [Required]
         public string CalisanAdi { get; set; }
-        public string UzmanlikAlani { get; set; }   
-        public string UygunlukSaatleri { get; set; }
+        public string UzmanlikAlani { get; set; }
+        public TimeSpan? UygunlukBaslangic { get; set; }
+        public TimeSpan? UygunlukBitis { get; set; }
+
         [ForeignKey("Salon")]
         public int SalonId { get; set; }
 
