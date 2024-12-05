@@ -1,0 +1,47 @@
+﻿@model Calisan
+
+
+
+<form method="post">
+
+    <div class="border p-3 mt-5">
+        <div class="row pb-3">
+            <h2 class="text-bg-danger-primary">Çalışan Ekle</h2>
+            <hr />
+        </div>
+
+        <!-- Çalışan Adı -->
+        <div class="mb-3">
+            <label asp-for="CalisanAdi"></label>
+            <input asp-for="CalisanAdi" class="form-control" name="CalisanAdi" />
+        </div>
+
+        <!-- Uzmanlık Alanları -->
+        <div class="mb-3">
+            <label asp-for="UzmanlikAlani"></label>
+            <input asp-for="UzmanlikAlani" class="form-control" name="UzmanlikAlani" />
+        </div>
+
+        <!-- İşe Başlama Saati -->
+        <div class="mb-3">
+            <label asp-for="UygunlukBaslangic"></label>
+            <input type="time" asp-for="UygunlukBaslangic" class="form-control" name="UygunlukBaslangic" />
+        </div>
+
+        <!-- İşe Bitiş Saati -->
+        <div class="mb-3">
+            <label asp-for="UygunlukBitis"></label>
+            <input  type="time" asp-for="UygunlukBitis" class="form-control" name="UygunlukBitis" />
+        </div>
+
+        <!-- SalonId (Gizli) -->
+        <input asp-for="SalonId" type="hidden" name="SalonId" value="1" />
+        <!-- Submit Butonu -->
+        <div class="text-end">
+            <button type="submit" class="btn btn-primary">Çalışan Ekle</button>
+            <a asp-controller="Calisan" asp-action="Index" class="btn btn-primary">Geri Dön</a>
+            
+        </div>
+    </div>
+
+</form>
