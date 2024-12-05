@@ -13,7 +13,7 @@ namespace WebÖdev.Models
         public TimeSpan? UygunlukBaslangic { get; set; }
         public TimeSpan? UygunlukBitis { get; set; }
 
-        [ForeignKey("Salon")]
+         [ForeignKey("Salon")]
         public int SalonId { get; set; }
 
         // Navigation Property

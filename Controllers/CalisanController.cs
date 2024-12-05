@@ -17,5 +17,11 @@ namespace WebÖdev.Controllers
             List<Calisan> objCalisanList = _uygulamaDbContext.Calisanlar.ToList();
             return View(objCalisanList);  
         }
+
+        public IActionResult CalisanEkle() 
+        { 
+            return View(); 
+        
+        }
     }
 }
